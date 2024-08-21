@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: fasteryoutubesummary
-Version: 0.1.1
+Version: 0.1.3
 Summary: Faster YouTube Summary is a tool designed to quickly generate detailed summaries of YouTube videos using Groq API
 Home-page: https://github.com/AlexanderJiazx/FasterYouTubeSummary
 Author: Alexander Jia
@@ -42,7 +42,7 @@ export GROQ_API_KEY="YOUR_API_KEY"
 After setup, you can use Faster YouTube Summary in your project with the following code:
 
 ```python
-from get_video_summary import get_video_summary
+from fasteryoutubesummary import get_video_summary
 import os  
 
 url = input("Enter the URL of the YouTube video: ")
@@ -56,7 +56,7 @@ print(summary)
 - To receive the summary as plain text only, set `return_summary_only` to `True`.
 
 ```python
-from get_video_summary import get_video_summary
+from fasteryoutubesummary import get_video_summary
 import os  
 
 url = input("Enter the URL of the YouTube video: ")

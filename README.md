@@ -42,7 +42,7 @@ print(summary)
 - To receive the summary as plain text only, set `return_summary_only` to `True`.
 
 ```python
-from get_video_summary import get_video_summary
+from fasteryoutubesummary import get_video_summary
 import os  
 
 url = input("Enter the URL of the YouTube video: ")

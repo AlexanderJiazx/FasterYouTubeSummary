@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='fasteryoutubesummary',                    # Name of your package
-    version='0.1.1',                      # Version number
+    version='0.1.3',                      # Version number
     packages=find_packages(),             # Automatically find packages
     install_requires=[                    # External dependencies
         'pytubefix', 'groq', 'requests',               # Example of a dependency
