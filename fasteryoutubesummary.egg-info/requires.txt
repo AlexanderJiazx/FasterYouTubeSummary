@@ -1,0 +1,3 @@
+pytubefix
+groq
+requests

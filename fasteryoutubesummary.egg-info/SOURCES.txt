@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+fasteryoutubesummary.egg-info/PKG-INFO
+fasteryoutubesummary.egg-info/SOURCES.txt
+fasteryoutubesummary.egg-info/dependency_links.txt
+fasteryoutubesummary.egg-info/requires.txt
+fasteryoutubesummary.egg-info/top_level.txt
