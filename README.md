@@ -28,7 +28,7 @@ export GROQ_API_KEY="YOUR_API_KEY"
 After setup, you can use Faster YouTube Summary in your project with the following code:
 
 ```python
-from get_video_summary import get_video_summary
+from fasteryoutubesummary import get_video_summary
 import os  
 
 url = input("Enter the URL of the YouTube video: ")
