@@ -23,7 +23,7 @@ Faster YouTube Summary leverages the Groq API to provide fast and accurate respo
 export GROQ_API_KEY="YOUR_API_KEY"
 ```
 
-## Usage
+## Basic Usage
 
 After setup, you can use Faster YouTube Summary in your project with the following code:
 
@@ -51,3 +51,38 @@ summary = get_video_summary(url, api_key, return_summary_only=Ture)
   
 print(summary)
 ```
+
+## FASTER mode
+
+Although the default model is fast enough to generate summaries, we've provided a way to make it even faster:
+
+```python
+from fasteryoutubesummary import get_video_summary
+import os  
+
+url = input("Enter the URL of the YouTube video: ")
+api_key = os.environ.get("GROQ_API_KEY")
+summary = get_video_summary(url, api_key, mode=FASTER)
+  
+print(summary)
+```
+
+In this mode, the model will be set to llama3.1-8b, providing faster responses, but summary quality may be slightly reduced.
+
+## Multilingual Output
+
+Thanks to the llama3.1 family, we can now handle input in different languages:
+
+```python
+from fasteryoutubesummary import get_video_summary
+import os  
+
+url = input("Enter the URL of the YouTube video: ")
+api_key = os.environ.get("GROQ_API_KEY")
+summary = get_video_summary(url, api_key, language=JAPANESE)
+  
+print(summary)
+```
+
+Choose the desired language using the language parameter.
+Currently supported languages: English, Spanish, German, French, Italian, Japanese
