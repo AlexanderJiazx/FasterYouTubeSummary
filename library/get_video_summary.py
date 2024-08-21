@@ -5,7 +5,7 @@ import os
 from groq import Groq
 from generate_webpage import create_summary_page
 
-def get_video_summary(url, api_key, return_summary_only=False):
+def get_video_summary(url, api_key, mode="BETTER", return_summary_only=False):
     # Set the relative path for the download folder
     download_folder = os.path.join(os.path.dirname(__file__), "./data_library/youtube_downloads")
     if not os.path.exists(download_folder):
@@ -57,9 +57,15 @@ def get_video_summary(url, api_key, return_summary_only=False):
     if not return_summary_only:
         print("Summarizing the content")
 
+    # Set the model based on the mode
+    if mode.upper() == "FASTER":
+        model = "llama-3.1-8b-instant"
+    else:  # Default to BETTER mode
+        model = "llama-3.1-70b-versatile"
+
     # Action summarize
     completion = client.chat.completions.create(
-        model="llama-3.1-70b-versatile",
+        model=model,
         messages=[
             {
                 "role": "system",
