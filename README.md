@@ -71,7 +71,7 @@ In this mode, the model will be set to llama3.1-8b, providing faster responses, 
 
 ## Multilingual Output
 
-Thanks to the llama3.1 family, we can now handle input in different languages:
+Thanks to the llama3.1 family, we can now handle input in different languages, and of course, output language, you're in control:
 
 ```python
 from fasteryoutubesummary import get_video_summary
