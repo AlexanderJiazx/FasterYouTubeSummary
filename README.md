@@ -7,7 +7,7 @@
 To install the necessary dependencies, run the following command:
 
 ```bash
-pip install pytubefix groq
+pip install pytubefix groq fasteryoutubesummary
 ```
 
 ## Setup
