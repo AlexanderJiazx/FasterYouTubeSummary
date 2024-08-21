@@ -85,4 +85,14 @@ print(summary)
 ```
 
 Choose the desired language using the language parameter.
-Currently supported languages: English, Spanish, German, French, Italian, Japanese
+
+Currently supported languages:
+
+| Language | Language Code |
+|----------|---------------|
+| English  | ENGLISH       |
+| Spanish  | SPANISH       |
+| German   | GERMAN        |
+| French   | FRENCH        |
+| Italian  | ITALIAN       |
+| Japanese | JAPANESE      |
