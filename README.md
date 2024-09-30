@@ -7,7 +7,7 @@
 To install the necessary dependencies, run the following command:
 
 ```bash
-pip install pytubefix groq fasteryoutubesummary
+pip install fasteryoutubesummary
 ```
 
 ## Setup
@@ -47,7 +47,7 @@ import os
 
 url = input("Enter the URL of the YouTube video: ")
 api_key = os.environ.get("GROQ_API_KEY")
-summary = get_video_summary(url, api_key, return_summary_only=Ture)
+summary = get_video_summary(url, api_key, return_summary_only=True)
   
 print(summary)
 ```
@@ -62,7 +62,7 @@ import os
 
 url = input("Enter the URL of the YouTube video: ")
 api_key = os.environ.get("GROQ_API_KEY")
-summary = get_video_summary(url, api_key, mode=FASTER)
+summary = get_video_summary(url, api_key, mode='FASTER')
   
 print(summary)
 ```
