@@ -59,9 +59,9 @@ def get_video_summary(url, api_key, mode="BETTER", language="ENGLISH", return_su
 
     # Set the model based on the mode
     if mode.upper() == "FASTER":
-        model = "llama-3.1-8b-instant"
+        model = "llama-3.2-1b-preview"
     else:  # Default to BETTER mode
-        model = "llama-3.1-70b-versatile"
+        model = "llama-3.2-90b-text-preview"
         
         SYSTEM_PROMPTS = {
         "ENGLISH": "You are a YouTube video summarizer. Based on the audio transcription or captions, summarize the content of the video. Summarize all content and do not omit any detail or opinion. Output summary only. Output in English.",
