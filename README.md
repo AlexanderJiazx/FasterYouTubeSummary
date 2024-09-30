@@ -79,7 +79,7 @@ import os
 
 url = input("Enter the URL of the YouTube video: ")
 api_key = os.environ.get("GROQ_API_KEY")
-summary = get_video_summary(url, api_key, language=JAPANESE)
+summary = get_video_summary(url, api_key, language='JAPANESE')
   
 print(summary)
 ```
