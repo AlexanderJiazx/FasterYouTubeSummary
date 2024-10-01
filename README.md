@@ -67,11 +67,11 @@ summary = get_video_summary(url, api_key, mode='FASTER')
 print(summary)
 ```
 
-In this mode, the model will be set to llama3.1-8b, providing faster responses, but summary quality may be slightly reduced.
+In this mode, the model will be set to llama3.2-1b, providing faster responses, but summary quality may be slightly reduced.
 
 ## Multilingual Output
 
-Thanks to the llama3.1 family, we can now handle input in different languages, and of course, output language, you're in control:
+Thanks to the llama 3.2 family, we can now handle input in different languages, and of course, output language, you're in control:
 
 ```python
 from fasteryoutubesummary import get_video_summary
