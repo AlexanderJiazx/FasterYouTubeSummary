@@ -1,9 +1,9 @@
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
-from caption import get_video_caption
+from .caption import get_video_caption
+from .generate_webpage import create_summary_page
 import os
 from groq import Groq
-from generate_webpage import create_summary_page
 
 
 def get_video_summary(url, api_key, mode="BETTER", language="ENGLISH", return_summary_only=False):
