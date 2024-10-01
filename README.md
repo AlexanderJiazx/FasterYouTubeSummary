@@ -1,6 +1,6 @@
 # Faster YouTube Summary
 
-**Faster YouTube Summary** is a powerful tool designed to quickly generate detailed summaries of YouTube videos using the Groq API. This tool can deliver a comprehensive summary of a YouTube video in just 2 seconds, provided the video has native captions.
+**Faster YouTube Summary** is a powerful tool designed to quickly generate detailed summaries of YouTube videos using the Groq API. This tool can deliver a comprehensive summary of a YouTube video in just 2 seconds (Provided video has native captions.)
 
 ## Installation
 
