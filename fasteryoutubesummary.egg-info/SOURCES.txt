@@ -6,3 +6,8 @@ fasteryoutubesummary.egg-info/SOURCES.txt
 fasteryoutubesummary.egg-info/dependency_links.txt
 fasteryoutubesummary.egg-info/requires.txt
 fasteryoutubesummary.egg-info/top_level.txt
+library/__init__.py
+library/caption.py
+library/example.py
+library/generate_webpage.py
+library/get_video_summary.py
