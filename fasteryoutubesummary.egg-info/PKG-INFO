@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: fasteryoutubesummary
-Version: 1.0.0
+Version: 1.1.0
 Summary: Faster YouTube Summary is a tool designed to quickly generate detailed summaries of YouTube videos using Groq API
 Home-page: https://github.com/AlexanderJiazx/FasterYouTubeSummary
 Author: Alexander Jia
@@ -11,6 +11,9 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.11
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Requires-Dist: pytubefix
+Requires-Dist: groq
+Requires-Dist: requests
 
 # Faster YouTube Summary
 
@@ -21,7 +24,7 @@ License-File: LICENSE
 To install the necessary dependencies, run the following command:
 
 ```bash
-pip install pytubefix groq fasteryoutubesummary
+pip install fasteryoutubesummary
 ```
 
 ## Setup
@@ -61,7 +64,7 @@ import os
 
 url = input("Enter the URL of the YouTube video: ")
 api_key = os.environ.get("GROQ_API_KEY")
-summary = get_video_summary(url, api_key, return_summary_only=Ture)
+summary = get_video_summary(url, api_key, return_summary_only=True)
   
 print(summary)
 ```
@@ -76,7 +79,7 @@ import os
 
 url = input("Enter the URL of the YouTube video: ")
 api_key = os.environ.get("GROQ_API_KEY")
-summary = get_video_summary(url, api_key, mode=FASTER)
+summary = get_video_summary(url, api_key, mode='FASTER')
   
 print(summary)
 ```
@@ -93,7 +96,7 @@ import os
 
 url = input("Enter the URL of the YouTube video: ")
 api_key = os.environ.get("GROQ_API_KEY")
-summary = get_video_summary(url, api_key, language=JAPANESE)
+summary = get_video_summary(url, api_key, language='JAPANESE')
   
 print(summary)
 ```
