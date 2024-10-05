@@ -2,19 +2,22 @@ import os
 from urllib.parse import urlparse, parse_qs
 import html
 
-def create_summary_page(video_url, video_title, summary_text):
+video_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+summary_text = "Hello world"
+video_title = "My Video"
+
     # Extract video ID from the URL
-    parsed_url = urlparse(video_url)
-    video_id = parse_qs(parsed_url.query).get('v', [None])[0]
-    if not video_id:
+parsed_url = urlparse(video_url)
+video_id = parse_qs(parsed_url.query).get('v', [None])[0]
+if not video_id:
         video_id = parsed_url.path.split('/')[-1]
 
     # Process the summary text
-    summary_html = html.escape(summary_text)  # Escape HTML special characters
-    summary_html = summary_html.replace('\n', '<br>')  # Replace newlines with <br> tags
+summary_html = html.escape(summary_text)  # Escape HTML special characters
+summary_html = summary_html.replace('\n', '<br>')  # Replace newlines with <br> tags
 
     # HTML template with dark mode support
-    html_content = f"""
+html_content = f"""
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -92,11 +95,10 @@ def create_summary_page(video_url, video_title, summary_text):
     """
 
     # Use a fixed filename
-    filename = "summary.html"
+filename = "summary.html"
 
     # Write the HTML content to a file
-    with open(filename, 'w', encoding='utf-8') as f:
+with open(filename, 'w', encoding='utf-8') as f:
         f.write(html_content)
 
-    print(f"Summary page created: {filename}")
-    return filename
+print(f"Summary page created: {filename}")
