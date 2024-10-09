@@ -6,7 +6,7 @@ import os
 from groq import Groq
 
 
-def get_video_summary(url, api_key, mode="BETTER", language="ENGLISH", return_summary_only=False):
+def get_video_summary(url, api_key, mode="BETTER", language="ENGLISH", return_summary_only=True):
     # Set the relative path for the download folder
     download_folder = os.path.join(os.path.dirname(__file__), "./data_library/youtube_downloads")
     
